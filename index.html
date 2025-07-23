@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Playground - Retro Game Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Pixel Playground</h1>
+            <p class="subtitle">A collection of retro pixel games</p>
+        </header>
+        
+        <div class="game-grid">
+            <!-- Tic Tac Toe -->
+            <div class="game-card" onclick="loadGame('tictactoe')">
+                <div class="game-icon" id="tic-tac-toe-icon"></div>
+                <h3>Tic Tac Toe</h3>
+                <p>The classic X and O game</p>
+            </div>
+            
+            <!-- Rock Paper Scissors -->
+            <div class="game-card" onclick="loadGame('rps')">
+                <div class="game-icon" id="rps-icon"></div>
+                <h3>Rock Paper Scissors</h3>
+                <p>Beat the computer in this classic duel</p>
+            </div>
+            
+            <!-- Memory Game -->
+            <div class="game-card" onclick="loadGame('memory')">
+                <div class="game-icon" id="memory-icon"></div>
+                <h3>Memory Cards</h3>
+                <p>Test your memory with this matching game</p>
+            </div>
+            
+            <!-- Snake -->
+            <div class="game-card" onclick="loadGame('snake')">
+                <div class="game-icon" id="snake-icon"></div>
+                <h3>Snake</h3>
+                <p>The classic Nokia-style snake game</p>
+            </div>
+        </div>
+        
+        <div class="game-container" id="game-container">
+            <div class="placeholder">
+                <div class="pixel-robot"></div>
+                <p>Select a game to play!</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Made with ♥ for retro gaming enthusiasts</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
